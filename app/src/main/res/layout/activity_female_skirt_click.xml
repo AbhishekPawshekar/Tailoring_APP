@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".female_skirt_click">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/female_skirt"
+                    app:layout_constraintBottom_toBottomOf="@+id/backraise_female_skirt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/front_rise_female_skirt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginStart="176dp"
+                    android:layout_marginLeft="176dp"
+                    android:ems="10"
+
+                    android:hint="Front Rise:"
+                    android:textColor="@color/dark_orange"
+
+                    android:textSize="10dp"
+
+                    app:layout_constraintBottom_toTopOf="@+id/imageView"
+
+                    app:layout_constraintStart_toStartOf="parent">
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/waist_width_female_skirt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginStart="108dp"
+
+                    android:layout_marginLeft="108dp"
+
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:hint="Waist Width:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintStart_toStartOf="@+id/front_rise_female_skirt"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bottom_width_female_skirt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginTop="244dp"
+
+                    android:ems="10"
+                    android:hint="Bottom Width:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.897"
+                    app:layout_constraintStart_toStartOf="@+id/front_rise_female_skirt"
+                    app:layout_constraintTop_toTopOf="@+id/front_rise_female_skirt">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Total_length_female_skirt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginLeft="156dp"
+                    android:layout_marginTop="64dp"
+                    android:ems="10"
+                    android:hint="Total Length:"
+
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/front_rise_female_skirt"
+                    app:layout_constraintTop_toBottomOf="@+id/front_rise_female_skirt">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/backraise_female_skirt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:ems="10"
+                    android:hint="Back Raise:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    android:layout_marginTop="400dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="skirt"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/next_button_female_skirt"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="80dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/backraise_female_skirt"
+                    android:layout_width="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

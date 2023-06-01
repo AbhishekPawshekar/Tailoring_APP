@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "802070972776",
+    "project_id": "tailor-app-quickyess",
+    "storage_bucket": "tailor-app-quickyess.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802070972776:android:17615c31bdad7658986edd",
+        "android_client_info": {
+          "package_name": "com.example.tailor_appquickyess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802070972776-0q3vh7anmo5icdcvb2vvl1l2eftl2a28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt_RIbxd5YVEzv5s3IIvVuZyn5vumkt8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802070972776-0q3vh7anmo5icdcvb2vvl1l2eftl2a28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

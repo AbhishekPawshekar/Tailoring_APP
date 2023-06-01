@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".men_formal_pant_click">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/male_pant"
+                    app:layout_constraintBottom_toBottomOf="@+id/backraise_men_formal_pant"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/front_rise_men_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginStart="176dp"
+                    android:layout_marginLeft="176dp"
+                    android:ems="10"
+
+                    android:hint="Front Rise:"
+                    android:textColor="@color/dark_orange"
+
+                    android:textSize="10dp"
+
+                    app:layout_constraintBottom_toTopOf="@+id/imageView"
+
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/hip_length_men_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginTop="48dp"
+
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:ems="10"
+                    android:hint="Hip Length:"
+
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/front_rise_men_formal_pant"
+                    app:layout_constraintTop_toTopOf="@+id/front_rise_men_formal_pant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/waist_width_men_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginStart="136dp"
+
+                    android:layout_marginLeft="136dp"
+                    android:layout_marginTop="16dp"
+
+                    android:ems="10"
+                    android:hint="Waist Width:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintStart_toStartOf="@+id/front_rise_men_formal_pant"
+                    app:layout_constraintTop_toTopOf="@+id/hip_length_men_formal_pant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inseamlength_men_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginStart="128dp"
+                    android:layout_marginLeft="128dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Inseam Length:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintStart_toStartOf="@+id/front_rise_men_formal_pant"
+                    app:layout_constraintTop_toBottomOf="@+id/hip_length_men_formal_pant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:gravity="center"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/legopenmen_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginTop="244dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_marginRight="44dp"
+
+                    android:ems="10"
+                    android:hint="Leg Open:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/front_rise_men_formal_pant"
+                    app:layout_constraintTop_toTopOf="@+id/front_rise_men_formal_pant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/knee_length_men_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginStart="128dp"
+                    android:layout_marginLeft="128dp"
+                    android:layout_marginTop="120dp"
+                    android:ems="10"
+                    android:hint="Knee Length:"
+
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintStart_toStartOf="@+id/front_rise_men_formal_pant"
+                    app:layout_constraintTop_toBottomOf="@+id/front_rise_men_formal_pant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Total_length_men_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="156dp"
+                    android:layout_marginRight="156dp"
+                    android:ems="10"
+                    android:hint="Total Length:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/front_rise_men_formal_pant"
+                    app:layout_constraintTop_toBottomOf="@+id/front_rise_men_formal_pant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/backraise_men_formal_pant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/personaldetailsregistration"
+                    android:layout_alignTop="@+id/personaldetailsregistration"
+                    android:ems="10"
+                    android:hint="Back Raise:"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="10dp"
+                    android:layout_marginTop="400dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BAFFFFFC"
+                        android:gravity="center"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:singleLine="false"
+                        android:textSize="10dp"
+                        android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Pant"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/next_button_formal_pant"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="80dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/backraise_men_formal_pant"
+                    android:layout_width="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

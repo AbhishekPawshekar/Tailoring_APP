@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp1">
+        <item android:title="GENERAL"
+            android:enabled="false"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/home_customer"
+            android:title="Home"
+            android:icon="@drawable/homeicon"/>
+        <item
+            android:id="@+id/feedback_customer"
+            android:title="Feedback"
+            android:icon="@drawable/feedbackicon"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp2">
+        <item android:title="ACCOUNT"
+            android:enabled="false"
+            android:checkable="false"/>
+        <item android:id="@+id/deleteaccount"
+            android:title="Delete Account"
+            android:icon="@drawable/deleteicon"/>
+        <item
+            android:id="@+id/logout_customer"
+            android:title="Logout"
+            android:icon="@drawable/logouticon"/>
+
+    </group>
+</menu>

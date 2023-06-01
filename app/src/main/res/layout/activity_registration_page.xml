@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".registration_page">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dark_orange" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/view2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details:"
+                android:fontFamily="serif"
+                android:textSize="14dp"
+                android:textColor="@color/dark_orange"
+                android:textStyle="bold"
+                android:id="@+id/personaldetailsregistration"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:textColor="@color/dark_orange"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:hint="First_name:"
+                android:layout_alignTop="@+id/personaldetailsregistration"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BAFFFFFC"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:textSize="10dp"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:ems="10"
+                android:textColor="@color/dark_orange"
+                android:layout_alignTop="@+id/first_name"
+                android:hint="Last_Name:"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="10dp"
+                    android:background="#BAFFFFFC"
+                    android:textStyle="normal|italic"
+
+                    ></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_orange"
+                    android:text="Gender"
+                    android:layout_alignTop="@+id/last_name"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/sex"
+                    android:layout_alignTop="@+id/last_name">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:checked="true"
+                        android:textColor="@color/dark_orange"
+                        android:id="@+id/male"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="@color/dark_orange"
+                        android:id="@+id/female"/>
+                </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communication Details:"
+                android:fontFamily="serif"
+                android:textSize="14dp"
+                android:layout_marginTop="250dp"
+                android:textColor="@color/dark_orange"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:textStyle="bold"
+                android:id="@+id/communication_detailsregistration"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailAddrees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Email:"
+                android:textColor="@color/dark_orange"
+                android:layout_alignTop="@+id/communication_detailsregistration"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:background="#BAFFFFFC"
+                    android:textStyle="normal|italic"
+                    android:textSize="10dp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/dark_orange"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:ems="10"
+                android:hint="Phone_No"
+                android:layout_alignTop="@+id/emailAddrees"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:background="#BAFFFFFC"
+                    android:textStyle="normal|italic"
+                    android:textSize="10dp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Details:"
+                android:textColor="@color/dark_orange"
+                android:fontFamily="serif"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:textSize="14dp"
+                android:layout_alignTop="@+id/phone_no"
+                android:layout_marginTop="80dp"
+                android:textStyle="bold"
+                android:id="@+id/accountdetailsregistration"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:textColor="@color/dark_orange"
+                android:layout_alignTop="@+id/accountdetailsregistration"
+                android:hint="User_Name:"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="#BAFFFFFC"
+                    android:textStyle="normal|italic"
+                    android:inputType="textPersonName"
+                    android:textSize="10dp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/dark_orange"
+                android:ems="10"
+                android:layout_alignTop="@+id/user_name"
+                android:hint="Password:"
+                android:textSize="10dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="#BAFFFFFC"
+                    android:textStyle="normal|italic"
+                    android:inputType="textPassword"
+                    android:textSize="10dp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_orange"
+                android:layout_alignLeft="@+id/personaldetailsregistration"
+                android:layout_marginTop="60dp"
+                android:ems="10"
+                android:layout_alignTop="@+id/password"
+                android:hint="Re_password:"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="#BAFFFFFC"
+                    android:textStyle="normal|italic"
+                    android:inputType="textPassword"
+                    android:textSize="10dp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signupback"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="80dp"
+                android:background="#DAEEFF41"
+                android:text="SignUp"
+                android:layout_alignTop="@+id/re_password"
+                android:textSize="15dp"
+                app:iconTint="#F8F6F6" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

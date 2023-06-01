@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tailor_appquickyess">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tailor_appquickyess">
+        <activity android:name=".payment_recipt"></activity>
+        <activity android:name=".extra_details_lower_body" />
+        <activity android:name=".extra_details_upper_body" />
+        <activity android:name=".after_measurement_taken_lower_body" />
+        <activity android:name=".after_measurement_taken" />
+        <activity android:name=".main_page" />
+        <activity android:name=".view_feedback" />
+        <activity android:name=".view_orders_admin" />
+        <activity android:name=".list_of_customer" />
+        <activity android:name=".female_skirt_click" />
+        <activity android:name=".female_pant_click" />
+        <activity android:name=".female_dress" />
+        <activity android:name=".female_shirt_click" />
+        <activity android:name=".female_wedding_dress" />
+        <activity android:name=".men_jeans_click" />
+        <activity android:name=".men_formal_pant_click" />
+        <activity android:name=".men_jacket_click" />
+        <activity android:name=".men_blazer_click" />
+        <activity android:name=".men_shirt_click" />
+        <activity android:name=".adminview" />
+        <activity android:name=".registration_page" />
+        <activity android:name=".login_page" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_click"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignRight="@+id/centerfinder">
+
+            <TextView
+                android:id="@+id/request_to_under_stiching"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Under Stiching"
+                android:textColor="@color/dark_orange" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/centerfinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignLeft="@+id/centerfinder">
+
+            <TextView
+                android:id="@+id/request_to_completed_Stiching"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Completed Stiching"
+                android:textColor="@color/dark_orange" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/customer_stichingframelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+
+</FrameLayout>

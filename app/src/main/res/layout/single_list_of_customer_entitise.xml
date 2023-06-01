@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/singlelist_of_customer"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/alluserui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/entered_full_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="10dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/entered_username"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_alignLeft="@+id/entered_full_name"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="10dp"
+            android:textColor="@color/orange"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/entered_phoneno"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_alignLeft="@+id/entered_username"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange"
+            />
+
+        <TextView
+            android:id="@+id/entered_emailid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_alignLeft="@+id/entered_phoneno"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:id="@+id/entered_password"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:textColor="@color/orange"
+            android:layout_alignLeft="@+id/entered_emailid"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:textSize="10dp"
+            />
+        <TextView
+            android:id="@+id/entered_gender"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:text="Address"
+            android:layout_alignLeft="@+id/entered_password"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="10dp"
+            android:textColor="@color/orange"
+            android:gravity="center_horizontal"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

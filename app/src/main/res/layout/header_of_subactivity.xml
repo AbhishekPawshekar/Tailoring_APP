@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="200dp"
+    android:background="@drawable/background"
+    android:gravity="top"
+    android:padding="5dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/singinfullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#F8ECE3"
+        android:fontFamily="serif"
+        android:textColor="#7C3B0A"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singinusername"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:background="#F8ECE3"
+        android:textColor="#7C3B0A"
+        android:layout_alignTop="@+id/singinfullname"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:background="#F8ECE3"
+        android:textColor="#7C3B0A"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/singinemail"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

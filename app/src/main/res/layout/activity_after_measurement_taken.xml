@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".after_measurement_taken">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="Extra Details"
+                android:textColor="@color/dark_orange"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/customer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:ems="10"
+                android:hint="Customer Email:"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BAFFFFFC"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:textSize="10dp"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:ems="10"
+                android:hint="Type Of Cloth:"
+                android:layout_alignTop="@+id/customer_email"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BAFFFFFC"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:textSize="10dp"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/extradetails"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignTop="@+id/type"
+                android:layout_marginTop="80dp"
+                android:ems="10"
+                android:hint="Extra Details:"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#BAFFFFFC"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:textSize="10dp"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/extra_material"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignTop="@+id/extradetails"
+                android:layout_marginTop="120dp"
+                android:ems="10"
+                android:hint="Extra Material"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#BAFFFFFC"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="false"
+                    android:textSize="10dp"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/extra_material"
+                android:layout_marginTop="120dp"
+                android:ems="10"
+                android:hint="Total Price"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BAFFFFFC"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="false"
+                    android:textSize="10dp"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/advance_given"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/Total_price"
+                android:layout_marginTop="80dp"
+                android:ems="10"
+                android:hint="Advance Given:"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BAFFFFFC"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="false"
+                    android:textSize="10dp"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/date_of_order"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/advance_given"
+                android:layout_marginTop="80dp"
+                android:inputType="date"
+                android:hint="Current Date:"
+                android:layout_marginRight="100dp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Select Date"
+                android:layout_alignTop="@+id/advance_given"
+                android:layout_marginTop="80dp"
+                android:textSize="10dp"
+                android:id="@+id/selectcurrentbutton"
+                android:layout_alignParentRight="true"
+                />
+
+            <EditText
+                android:id="@+id/due_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/date_of_order"
+                android:layout_marginTop="80dp"
+                android:inputType="date"
+                android:hint="Due Date:"
+                android:layout_marginRight="100dp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_orange"
+                android:textSize="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Select Date"
+                android:layout_alignTop="@+id/date_of_order"
+                android:layout_marginTop="80dp"
+                android:textSize="10dp"
+                android:id="@+id/selectdatebutton"
+                android:layout_alignParentRight="true"
+                />
+
+            <TextView
+                android:id="@+id/imagestatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/due_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:fontFamily="serif"
+                android:text="Images"
+                android:textColor="@color/dark_orange"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FAAC71"
+                    android:layout_alignTop="@+id/imagestatic"
+                    android:layout_marginTop="60dp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:text="Submit"
+                android:layout_alignTop="@+id/img1"
+                android:layout_marginTop="130dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp1">
+        <item android:title="GENERAL"
+            android:enabled="false"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/homeicon"/>
+        <item
+            android:id="@+id/listofcustomer"
+            android:title="List Of Customer's"
+            android:icon="@drawable/listicon"/>
+        <item
+            android:id="@+id/view_orders"
+            android:title="View Orders (Completed)"
+            android:icon="@drawable/viewicon"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp2">
+        <item
+            android:title="MEN's"
+            android:checkable="false"
+            android:enabled="false">
+        </item>
+
+    <item
+        android:id="@+id/shirt"
+        android:title="Shirt"
+        android:icon="@drawable/shriticon"/>
+
+        <item
+            android:id="@+id/blazer"
+            android:title="blazer"
+            android:icon="@drawable/blazericon"/>
+
+        <item
+            android:id="@+id/jacket"
+            android:title="Jacket"
+            android:icon="@drawable/jacketicon"/>
+        <item
+            android:id="@+id/formalpant"
+            android:title="Formal pant"
+            android:icon="@drawable/painticon"/>
+
+        <item
+            android:id="@+id/jeans"
+            android:title="jeans"
+            android:icon="@drawable/jeansicon"/>
+    </group>
+
+
+    <group android:id="@+id/grp4"
+        android:checkableBehavior="single">
+        <item
+            android:title="FEMALE"
+            android:checkable="false"
+            android:enabled="false">
+        </item>
+
+        <item
+            android:id="@+id/wedding_dress"
+            android:title="Wedding_Dress"
+            android:icon="@drawable/weddingdressicon"
+            />
+
+        <item
+            android:id="@+id/shirtforfemale"
+            android:title="Shirt"
+            android:icon="@drawable/shriticon"/>
+
+        <item
+            android:id="@+id/dress"
+            android:title="Dress"
+            android:icon="@drawable/dressicon"/>
+
+        <item
+            android:id="@+id/pantforfemale"
+            android:title="Pants"
+            android:icon="@drawable/jeansicon"/>
+        <item
+            android:id="@+id/skirts"
+            android:title="Skirts"
+            android:icon="@drawable/skirticon"/>
+    </group>
+
+    <group android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item
+            android:title="Feedback's Form Customer's"
+            android:id="@+id/feedback"
+            android:icon="@drawable/feedbackicon"/>
+
+        <item
+            android:id="@+id/logout_admin"
+            android:title="Logout"
+            android:icon="@drawable/logouticon"/></group>
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_page">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dark_orange" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_alignTop="@+id/view"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/view"
+            android:orientation="vertical">
+            <RelativeLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="120dp">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/welcome"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="40dp"
+                android:hint="Email:"
+                android:textSize="14dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="false"
+                    android:textSize="14dp"
+                    android:background="#FFFFFF"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Password:"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/dark_orange"
+
+                android:scrollbarSize="25dp"
+                android:textSize="14dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:background="#FFFFFF"
+                    android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/loginback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="15dp"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/request_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:onClick="request_to_signup"
+                android:text="Create New Account"
+                android:textColor="#A8FF0000" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
